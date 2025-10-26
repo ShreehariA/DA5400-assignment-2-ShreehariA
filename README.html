@@ -1,0 +1,496 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/shreeharianbazhagan/.cursor/extensions/shd101wyy.markdown-preview-enhanced-0.8.19-universal/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="foundations-of-machine-learning-da5400---assignment-2">Foundations of Machine Learning (DA5400) - Assignment 2 </h1>
+<p><strong>Student Name:</strong> Shreehari Anbazhagan<br>
+<strong>Roll Number:</strong> DA25C020</p>
+<hr>
+<h2 id="how-to-run">How to Run </h2>
+<h3 id="dataset-setup">Dataset Setup </h3>
+<p>Before running the code, ensure you have the required datasets in the <code>datasets/</code> folder:</p>
+<ol>
+<li>
+<p><strong>Create datasets folder:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">mkdir</span> datasets
+</code></pre></li>
+<li>
+<p><strong>Download datasets from Google Drive:</strong></p>
+<ul>
+<li><strong>A2Q1.csv</strong> (Question 1): <a href="https://drive.google.com/file/d/1SutFhOqVYhCnSdIXnZVlgEz7zhteiHX8/view">Download Link</a></li>
+<li><strong>A2Q2Data_train.csv</strong> (Question 2 Training): <a href="https://docs.google.com/spreadsheets/d/1b_j5sWYzXy1Tsu5VJ6GTJAzUCSq6lil1vYKbNp28R_E/edit?gid=1979034637#gid=1979034637">Download Link</a></li>
+<li><strong>A2Q2Data_test.csv</strong> (Question 2 Test): <a href="https://docs.google.com/spreadsheets/d/1fFNRFC_5ZPRdIu9levNcFsZQc7nGFF7ygY2Jo3vYRjE/edit?gid=868699502#gid=868699502">Download Link</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Place downloaded files in datasets folder:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>datasets/
+├── A2Q1.csv
+├── A2Q2Data_train.csv
+└── A2Q2Data_test.csv
+</code></pre></li>
+</ol>
+<h3 id="running-the-code">Running the Code </h3>
+<p><strong>Question 1 (Clustering Analysis):</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>python assignment2_q1_solution.py
+</code></pre><p><strong>Question 2 (Linear Regression Analysis):</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>python assignment2_q2_solution.py
+</code></pre><h3 id="requirements">Requirements </h3>
+<ul>
+<li>Python 3.7+</li>
+<li>NumPy</li>
+<li>Matplotlib</li>
+<li>Pandas</li>
+</ul>
+<h3 id="expected-output">Expected Output </h3>
+<ul>
+<li>Individual plots saved in <code>assignment2_q1_results/</code> and <code>assignment2_q2_results/</code> folders</li>
+<li>Console output showing convergence metrics and results</li>
+<li>Combined results plots for comprehensive analysis</li>
+</ul>
+<hr>
+<h2 id="assignment-overview">Assignment Overview </h2>
+<p>This assignment implements and compares various machine learning algorithms for clustering and regression tasks. The project consists of two main parts:</p>
+<ol>
+<li><strong>Question 1 (Q1)</strong>: Clustering analysis using Expectation-Maximization (EM) algorithms and K-means on binary data</li>
+<li><strong>Question 2 (Q2)</strong>: Linear regression analysis using analytical solutions, gradient descent, and ridge regression</li>
+</ol>
+<p>All algorithms are implemented from scratch using only NumPy and matplotlib, following the assignment requirements of not using standard machine learning libraries.</p>
+<hr>
+<h2 id="question-1-clustering-analysis">Question 1: Clustering Analysis </h2>
+<h3 id="problem-statement">Problem Statement </h3>
+<p>Given a dataset with 400 data points in {0, 1}^50 (binary data), determine the appropriate probabilistic mixture model and implement clustering algorithms.</p>
+<h3 id="part-i-bernoulli-mixture-em-algorithm">Part (i): Bernoulli Mixture EM Algorithm </h3>
+<p><strong>Model Selection and Theoretical Foundation</strong>:<br>
+For binary data, the Bernoulli Mixture Model is the most appropriate choice as it directly models the probability of each feature being 1 or 0. This model assumes that each data point x ∈ {0,1}^D is generated from a mixture of K Bernoulli distributions.</p>
+<p><strong>Mathematical Derivation</strong>:<br>
+The Bernoulli Mixture Model assumes each data point x is generated from a mixture of K Bernoulli distributions:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>P(x|θ) = Σ(k=1 to K) π_k * P(x|μ_k)
+</code></pre><p>Where:</p>
+<ul>
+<li>π_k: mixing weights (probabilities) such that Σ(k=1 to K) π_k = 1</li>
+<li>μ_k: Bernoulli parameters for component k, where μ_kd ∈ [0,1] for each dimension d</li>
+<li>P(x|μ_k) = Π(d=1 to D) μ_kd^(x_d) * (1-μ_kd)^(1-x_d)</li>
+</ul>
+<p><strong>EM Algorithm Derivation</strong>:</p>
+<p><strong>E-step (Expectation)</strong>: Compute responsibilities</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>γ_ik = π_k * P(x_i|μ_k) / Σ(j=1 to K) π_j * P(x_i|μ_j)
+</code></pre><p>The responsibility γ_ik represents the probability that data point i belongs to component k.</p>
+<p><strong>M-step (Maximization)</strong>: Update parameters</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>π_k = (1/N) * Σ(i=1 to N) γ_ik
+μ_kd = Σ(i=1 to N) γ_ik * x_id / Σ(i=1 to N) γ_ik
+</code></pre><p><strong>Implementation Details</strong>:</p>
+<ul>
+<li><strong>Numerical Stability</strong>: Implemented log-sum-exp trick to prevent numerical underflow/overflow</li>
+<li><strong>Initialization</strong>: Random initialization of μ_kd ∈ [0.25, 0.75] to avoid boundary values</li>
+<li><strong>Convergence</strong>: Tolerance of 1e-6 for log-likelihood change</li>
+<li><strong>Averaging</strong>: 100 random initializations to account for local optima</li>
+<li><strong>Parameters</strong>: K=4 components, maximum 40 iterations</li>
+</ul>
+<p><strong>Results Analysis</strong>:</p>
+<ul>
+<li><strong>Initial Log-Likelihood</strong>: ~-1500 (averaged over 100 runs)</li>
+<li><strong>Final Log-Likelihood</strong>: ~-950 (averaged over 100 runs)</li>
+<li><strong>Improvement</strong>: ~550 points increase</li>
+<li><strong>Convergence</strong>: Smooth, monotonic increase indicating proper model fit</li>
+<li><strong>Stability</strong>: Consistent convergence across different initializations</li>
+</ul>
+<p><img src="assignment2_q1_results/bernoulli_em.png" alt="Bernoulli Mixture EM Results"></p>
+<h3 id="part-ii-gaussian-mixture-em-algorithm">Part (ii): Gaussian Mixture EM Algorithm </h3>
+<p><strong>Theoretical Foundation</strong>:<br>
+The Gaussian Mixture Model assumes each data point is generated from a mixture of K multivariate Gaussian distributions:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>P(x|θ) = Σ(k=1 to K) π_k * N(x|μ_k, Σ_k)
+</code></pre><p>Where N(x|μ_k, Σ_k) is the multivariate normal probability density function.</p>
+<p><strong>Mathematical Derivation</strong>:<br>
+For a D-dimensional Gaussian:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>N(x|μ_k, Σ_k) = (1/√((2π)^D * |Σ_k|)) * exp(-0.5 * (x-μ_k)^T * Σ_k^(-1) * (x-μ_k))
+</code></pre><p><strong>EM Algorithm Implementation</strong>:</p>
+<ul>
+<li><strong>E-step</strong>: Compute responsibilities using multivariate normal PDF</li>
+<li><strong>M-step</strong>: Update means, covariances, and mixing weights</li>
+<li><strong>Regularization</strong>: Added small diagonal terms (0.01) to covariance matrices for numerical stability</li>
+<li><strong>Cholesky Decomposition</strong>: Used for efficient computation of multivariate normal PDF</li>
+</ul>
+<p><strong>Implementation Details</strong>:</p>
+<ul>
+<li><strong>Initialization</strong>: Means initialized from random data points, covariances as small diagonal matrices</li>
+<li><strong>Numerical Stability</strong>: Regularization terms and Cholesky decomposition</li>
+<li><strong>Vectorization</strong>: Efficient computation using broadcasting</li>
+<li><strong>Same Parameters</strong>: K=4, 100 random initializations, 40 max iterations</li>
+</ul>
+<p><strong>Results Analysis</strong>:</p>
+<ul>
+<li><strong>Initial Log-Likelihood</strong>: ~-7300 (averaged over 100 runs)</li>
+<li><strong>Final Log-Likelihood</strong>: ~-6630 (averaged over 100 runs)</li>
+<li><strong>Improvement</strong>: ~670 points increase</li>
+<li><strong>Performance</strong>: Significantly lower log-likelihood than Bernoulli EM</li>
+</ul>
+<p><strong>Comparison with Part (i)</strong>:<br>
+The Gaussian Mixture Model performs significantly worse than the Bernoulli Mixture Model for binary data. This demonstrates the importance of choosing the correct probabilistic model for the data type. The Gaussian model assumes continuous data and treats binary values as continuous, leading to suboptimal performance despite convergence.</p>
+<p><img src="assignment2_q1_results/gaussian_em.png" alt="Gaussian Mixture EM Results"></p>
+<h3 id="part-iii-k-means-algorithm">Part (iii): K-means Algorithm </h3>
+<p><strong>Theoretical Foundation</strong>:<br>
+K-means clustering aims to partition data into K clusters by minimizing the sum of squared distances between data points and their assigned centroids.</p>
+<p><strong>Mathematical Formulation</strong>:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>SSE = Σ(i=1 to N) Σ(k=1 to K) γ_ik * ||x_i - c_k||²
+</code></pre><p>Where:</p>
+<ul>
+<li>c_k: centroid of cluster k</li>
+<li>γ_ik: binary assignment indicator (1 if point i assigned to cluster k, 0 otherwise)</li>
+</ul>
+<p><strong>Algorithm Steps</strong>:</p>
+<ol>
+<li><strong>Initialization</strong>: Randomly select K data points as initial centroids</li>
+<li><strong>Assignment</strong>: Assign each point to nearest centroid using Euclidean distance</li>
+<li><strong>Update</strong>: Recalculate centroids as mean of assigned points</li>
+<li><strong>Convergence</strong>: Repeat until centroids don't change significantly</li>
+</ol>
+<p><strong>Implementation Details</strong>:</p>
+<ul>
+<li><strong>Distance Computation</strong>: Vectorized Euclidean distance calculation</li>
+<li><strong>Convergence</strong>: Stop when centroids change by less than tolerance</li>
+<li><strong>Initialization</strong>: Random selection from data points</li>
+<li><strong>Parameters</strong>: K=4 clusters, maximum 40 iterations</li>
+</ul>
+<p><strong>Results Analysis</strong>:</p>
+<ul>
+<li><strong>Initial Objective (SSE)</strong>: ~3200 (averaged over 100 runs)</li>
+<li><strong>Final Objective (SSE)</strong>: ~1750 (averaged over 100 runs)</li>
+<li><strong>Reduction</strong>: ~1450 points decrease</li>
+<li><strong>Convergence</strong>: Fast convergence in ~7 iterations</li>
+<li><strong>Efficiency</strong>: Much faster than EM algorithms</li>
+</ul>
+<p><img src="assignment2_q1_results/kmeans.png" alt="K-means Results"></p>
+<h3 id="part-iv-algorithm-selection-and-comparison">Part (iv): Algorithm Selection and Comparison </h3>
+<p><strong>Comprehensive Analysis</strong>:</p>
+<p><strong>Bernoulli Mixture EM</strong>:</p>
+<ul>
+<li><strong>Advantages</strong>:
+<ul>
+<li>Correct probabilistic model for binary data</li>
+<li>Highest log-likelihood (-950)</li>
+<li>Provides soft cluster assignments</li>
+<li>Interpretable parameters (probabilities)</li>
+</ul>
+</li>
+<li><strong>Disadvantages</strong>:
+<ul>
+<li>Computationally more expensive</li>
+<li>Requires more iterations</li>
+</ul>
+</li>
+</ul>
+<p><strong>Gaussian Mixture EM</strong>:</p>
+<ul>
+<li><strong>Advantages</strong>:
+<ul>
+<li>Converges reliably</li>
+<li>Well-established algorithm</li>
+</ul>
+</li>
+<li><strong>Disadvantages</strong>:
+<ul>
+<li>Inappropriate model for binary data</li>
+<li>Lower log-likelihood (-6630)</li>
+<li>Treats discrete data as continuous</li>
+</ul>
+</li>
+</ul>
+<p><strong>K-means</strong>:</p>
+<ul>
+<li><strong>Advantages</strong>:
+<ul>
+<li>Fast convergence</li>
+<li>Simple implementation</li>
+<li>Computationally efficient</li>
+</ul>
+</li>
+<li><strong>Disadvantages</strong>:
+<ul>
+<li>Hard clustering (no probabilities)</li>
+<li>No probabilistic framework</li>
+<li>Less informative for binary data</li>
+</ul>
+</li>
+</ul>
+<p><strong>Final Recommendation</strong>: <strong>Bernoulli Mixture EM</strong> is the best choice for this dataset because:</p>
+<ol>
+<li><strong>Model-Data Alignment</strong>: Bernoulli distribution is specifically designed for binary outcomes</li>
+<li><strong>Performance</strong>: Achieves the highest log-likelihood, indicating best fit</li>
+<li><strong>Interpretability</strong>: Parameters directly represent probabilities of features being 1</li>
+<li><strong>Theoretical Correctness</strong>: Matches the true data generation process</li>
+</ol>
+<hr>
+<h2 id="question-2-linear-regression-analysis">Question 2: Linear Regression Analysis </h2>
+<h3 id="problem-statement-1">Problem Statement </h3>
+<p>Given a dataset with 10,000 training points in (R^100, R) and test data, implement various regression algorithms and compare their performance.</p>
+<h3 id="part-i-analytical-least-squares-solution">Part (i): Analytical Least Squares Solution </h3>
+<p><strong>Theoretical Foundation</strong>:<br>
+The analytical solution for linear regression minimizes the sum of squared residuals:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>min_w ||Xw - y||²
+</code></pre><p><strong>Mathematical Derivation</strong>:<br>
+Taking the derivative with respect to w and setting it to zero:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>∇_w ||Xw - y||² = 2X^T(Xw - y) = 0
+X^T X w = X^T y
+w_ML = (X^T X)^(-1) X^T y
+</code></pre><p><strong>Implementation Details</strong>:</p>
+<ul>
+<li><strong>Bias Term</strong>: Added column of ones to X for intercept</li>
+<li><strong>Numerical Stability</strong>: Uses pseudo-inverse when X^T X is singular</li>
+<li><strong>Shape Handling</strong>: Proper reshaping of y to column vector</li>
+<li><strong>Error Handling</strong>: Try inverse first, fallback to pseudo-inverse</li>
+</ul>
+<p><strong>Results</strong>:</p>
+<ul>
+<li><strong>Solution Shape</strong>: w_ML (101×1) including bias term</li>
+<li><strong>Norm</strong>: ||w_ML||₂ provides measure of solution magnitude</li>
+<li><strong>Computation</strong>: Efficient analytical solution serves as ground truth</li>
+</ul>
+<h3 id="part-ii-gradient-descent-algorithm">Part (ii): Gradient Descent Algorithm </h3>
+<p><strong>Theoretical Foundation</strong>:<br>
+Gradient descent iteratively minimizes the least squares loss function by following the negative gradient direction.</p>
+<p><strong>Mathematical Derivation</strong>:</p>
+<ul>
+<li><strong>Loss Function</strong>: J(w) = (1/2m) * ||Xw - y||²</li>
+<li><strong>Gradient</strong>: ∇J(w) = (1/m) * X^T * (Xw - y)</li>
+<li><strong>Update Rule</strong>: w_{t+1} = w_t - α * ∇J(w_t)</li>
+</ul>
+<p><strong>Implementation Details</strong>:</p>
+<ul>
+<li><strong>Learning Rate</strong>: α = 0.0001 (tuned for linear scale visualization)</li>
+<li><strong>Epochs</strong>: 10,000 iterations</li>
+<li><strong>Convergence Metric</strong>: ||w_t - w_ML||₂ (distance to analytical solution)</li>
+<li><strong>Weight History</strong>: Track convergence to analytical solution</li>
+<li><strong>Bias Handling</strong>: Proper inclusion of bias term in gradient</li>
+</ul>
+<p><strong>Results Analysis</strong>:</p>
+<ul>
+<li><strong>Iterations</strong>: Completed 10,000 iterations</li>
+<li><strong>Convergence Pattern</strong>: ||w_t - w_ML||₂ decreases smoothly from ~1.0 to ~0.001</li>
+<li><strong>Final Distance</strong>: ~0.001 from analytical solution</li>
+<li><strong>Stability</strong>: Smooth, monotonic convergence on linear scale</li>
+</ul>
+<p><img src="assignment2_q2_results/gradient_descent.png" alt="Gradient Descent Convergence"></p>
+<p><strong>Observations</strong>:</p>
+<ul>
+<li><strong>Smooth Convergence</strong>: Characteristic of batch gradient descent</li>
+<li><strong>Stability</strong>: No oscillations, indicating appropriate learning rate</li>
+<li><strong>Precision</strong>: Reaches analytical solution with high accuracy</li>
+<li><strong>Linear Scale</strong>: Visible convergence curve without logarithmic scaling</li>
+</ul>
+<h3 id="part-iii-stochastic-gradient-descent-algorithm">Part (iii): Stochastic Gradient Descent Algorithm </h3>
+<p><strong>Theoretical Foundation</strong>:<br>
+Stochastic gradient descent uses mini-batches to approximate the full gradient, providing computational efficiency and often faster convergence per epoch.</p>
+<p><strong>Mathematical Derivation</strong>:<br>
+For mini-batch B of size |B|:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>∇J_B(w) = (1/|B|) * Σ(i∈B) X_i^T * (X_i w - y_i)
+</code></pre><p>The mini-batch gradient is an unbiased estimator of the full gradient.</p>
+<p><strong>Implementation Details</strong>:</p>
+<ul>
+<li><strong>Batch Size</strong>: 100 (as required by assignment)</li>
+<li><strong>Epochs</strong>: 1,000 epochs</li>
+<li><strong>Data Shuffling</strong>: Random permutation of data between epochs</li>
+<li><strong>Mini-batch Processing</strong>: Process data in batches of 100</li>
+<li><strong>Learning Rate</strong>: α = 0.001</li>
+<li><strong>Convergence Metric</strong>: ||w_t - w_ML||₂ (distance to analytical solution)</li>
+</ul>
+<p><strong>Results Analysis</strong>:</p>
+<ul>
+<li><strong>Total Updates</strong>: 1,000,000 updates (1,000 epochs × 1,000 batches)</li>
+<li><strong>Convergence Pattern</strong>: Oscillatory convergence with characteristic noise</li>
+<li><strong>Final Distance</strong>: ~0.0001 from analytical solution</li>
+<li><strong>Behavior</strong>: Stochastic fluctuations around convergence</li>
+</ul>
+<p><img src="assignment2_q2_results/stochastic_gd.png" alt="Stochastic Gradient Descent Convergence"></p>
+<p><strong>Observations</strong>:</p>
+<ul>
+<li><strong>Noisy Convergence</strong>: Oscillations due to mini-batch variance</li>
+<li><strong>Faster Per Epoch</strong>: More updates per epoch than batch GD</li>
+<li><strong>Similar Final Performance</strong>: Reaches same solution as batch GD</li>
+<li><strong>Trade-off</strong>: Noise vs computational efficiency</li>
+</ul>
+<p><strong>Comparison with Batch GD</strong>:</p>
+<ul>
+<li><strong>Convergence Speed</strong>: SGD shows faster initial progress per epoch</li>
+<li><strong>Stability</strong>: Batch GD is smoother, SGD is noisier</li>
+<li><strong>Final Accuracy</strong>: Both reach similar final solutions</li>
+<li><strong>Computational Cost</strong>: SGD requires more total updates</li>
+</ul>
+<p><img src="assignment2_q2_results/convergence_comparison.png" alt="Convergence Comparison"></p>
+<h3 id="part-iv-ridge-regression-with-cross-validation">Part (iv): Ridge Regression with Cross-Validation </h3>
+<p><strong>Theoretical Foundation</strong>:<br>
+Ridge regression adds L2 regularization to prevent overfitting:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>J(w) = (1/2m) * ||Xw - y||² + (λ/2) * ||w||²
+</code></pre><p><strong>Mathematical Derivation</strong>:</p>
+<ul>
+<li><strong>Gradient</strong>: ∇J(w) = (1/m) * X^T * (Xw - y) + λw</li>
+<li><strong>Analytical Solution</strong>: w_R = (X^T X + λI)^(-1) X^T y</li>
+<li><strong>Bias Regularization</strong>: Don't regularize bias term (first element)</li>
+</ul>
+<p><strong>Cross-Validation Implementation</strong>:</p>
+<ul>
+<li><strong>K-Fold CV</strong>: 5-fold cross-validation</li>
+<li><strong>Lambda Range</strong>: [0, 0.001, 0.01, 0.1, 1, 10, 100]</li>
+<li><strong>Train/Validation Split</strong>: Proper data splitting for each fold</li>
+<li><strong>Error Metric</strong>: Mean Squared Error on validation set</li>
+<li><strong>Model Training</strong>: Ridge gradient descent for each fold</li>
+</ul>
+<p><strong>Implementation Details</strong>:</p>
+<ul>
+<li><strong>Ridge GD</strong>: Implemented gradient descent for ridge regression</li>
+<li><strong>Bias Handling</strong>: Correctly excludes bias from regularization</li>
+<li><strong>Cross-Validation</strong>: Proper train/validation splits</li>
+<li><strong>Lambda Selection</strong>: Choose λ with minimum validation error</li>
+<li><strong>Test Evaluation</strong>: Compare w_R and w_ML on test data</li>
+</ul>
+<p><strong>Results Analysis</strong>:</p>
+<ul>
+<li><strong>Best λ</strong>: 0 (no regularization needed)</li>
+<li><strong>Minimum CV Error</strong>: ~0.0410</li>
+<li><strong>Lambda Effect</strong>: Clear U-shaped curve in validation error</li>
+<li><strong>Test Performance</strong>: w_R ≈ w_ML since λ=0</li>
+</ul>
+<p><img src="assignment2_q2_results/cross_validation.png" alt="Cross-Validation Results"></p>
+<p><strong>Key Insights</strong>:</p>
+<ol>
+<li><strong>Optimal Regularization</strong>: λ=0 indicates dataset doesn't suffer from overfitting</li>
+<li><strong>Model Equivalence</strong>: Ridge regression with λ=0 is equivalent to OLS</li>
+<li><strong>Cross-Validation Success</strong>: Properly identifies when regularization is unnecessary</li>
+<li><strong>Coefficient Comparison</strong>: w_R and w_ML are nearly identical</li>
+</ol>
+<h3 id="ridge-regression-analysis">Ridge Regression Analysis </h3>
+<p><strong>Ridge Coefficients at Different λ Values</strong>:<br>
+The implementation shows how coefficients change with different regularization strengths:</p>
+<p><img src="assignment2_q2_results/ridge_coefficients.png" alt="Ridge Coefficients at Different λ"></p>
+<p><strong>Key Observations</strong>:</p>
+<ul>
+<li><strong>λ=0</strong>: Identical to OLS solution</li>
+<li><strong>λ=0.01</strong>: Minimal shrinkage effect</li>
+<li><strong>λ=0.1</strong>: Noticeable coefficient reduction</li>
+<li><strong>λ=1</strong>: Significant shrinkage</li>
+<li><strong>λ=10</strong>: Strong regularization effect</li>
+</ul>
+<p><strong>Ridge Shrinkage Effect</strong>:<br>
+The shrinkage effect demonstrates how regularization reduces coefficient magnitudes:</p>
+<p><img src="assignment2_q2_results/ridge_shrinkage.png" alt="Ridge Shrinkage Effect"></p>
+<p><strong>Analysis</strong>:</p>
+<ul>
+<li><strong>Maximum Coefficient</strong>: Drops from ~0.245 to ~0.243 as λ increases</li>
+<li><strong>Smooth Transition</strong>: Gradual decrease in coefficient magnitudes</li>
+<li><strong>Best λ Marker</strong>: Vertical line shows optimal regularization strength</li>
+</ul>
+<p><strong>Ridge vs OLS Comparison</strong>:<br>
+Direct comparison of coefficients between Ridge and OLS:</p>
+<p><img src="assignment2_q2_results/ridge_comparison.png" alt="Ridge vs OLS Comparison"></p>
+<p><strong>Results</strong>:</p>
+<ul>
+<li><strong>Perfect Overlap</strong>: w_R and w_ML coefficients are identical when λ=0</li>
+<li><strong>No Regularization Effect</strong>: Since optimal λ=0, no shrinkage occurs</li>
+<li><strong>Model Equivalence</strong>: Confirms Ridge regression reduces to OLS</li>
+</ul>
+<hr>
+<h2 id="technical-implementation-details">Technical Implementation Details </h2>
+<h3 id="code-architecture">Code Architecture </h3>
+<ul>
+<li><strong>Q1</strong>: <code>assignment2_q1_solution.py</code> - Complete clustering implementation</li>
+<li><strong>Q2</strong>: <code>assignment2_q2_solution.py</code> - Complete regression implementation</li>
+<li><strong>Results</strong>: Individual PNG files with comprehensive visualizations</li>
+</ul>
+<h3 id="key-technical-features">Key Technical Features </h3>
+<p><strong>Numerical Stability</strong>:</p>
+<ul>
+<li><strong>Log-Sum-Exp Trick</strong>: Prevents underflow/overflow in EM algorithms</li>
+<li><strong>Pseudo-Inverse</strong>: Handles singular matrices in regression</li>
+<li><strong>Regularization</strong>: Prevents numerical issues in covariance matrices</li>
+<li><strong>Convergence Criteria</strong>: Early stopping for efficiency</li>
+</ul>
+<p><strong>Algorithm Implementation</strong>:</p>
+<ul>
+<li><strong>From-Scratch</strong>: No sklearn/scipy for core algorithms</li>
+<li><strong>Vectorization</strong>: Efficient NumPy operations</li>
+<li><strong>Memory Management</strong>: Proper array handling and reshaping</li>
+<li><strong>Error Handling</strong>: Robust implementation with fallbacks</li>
+</ul>
+<h3 id="performance-metrics">Performance Metrics </h3>
+<p><strong>Q1 Metrics</strong>:</p>
+<ul>
+<li><strong>Log-Likelihood</strong>: Measures model fit quality</li>
+<li><strong>Convergence Rate</strong>: Iterations to convergence</li>
+<li><strong>Stability</strong>: Consistency across random initializations</li>
+<li><strong>Algorithm Comparison</strong>: Direct performance comparison</li>
+</ul>
+<p><strong>Q2 Metrics</strong>:</p>
+<ul>
+<li><strong>Convergence Distance</strong>: ||w_t - w_ML||₂ over iterations</li>
+<li><strong>MSE</strong>: Mean squared error on test data</li>
+<li><strong>Cross-Validation</strong>: Validation error vs regularization strength</li>
+<li><strong>Coefficient Analysis</strong>: Regularization effect on coefficients</li>
+</ul>
+<hr>
+<h2 id="comprehensive-analysis-and-conclusions">Comprehensive Analysis and Conclusions </h2>
+<h3 id="question-1-clustering-analysis-conclusions">Question 1: Clustering Analysis Conclusions </h3>
+<p><strong>Model Selection Insights</strong>:</p>
+<ol>
+<li><strong>Data-Model Alignment</strong>: Bernoulli Mixture EM significantly outperforms Gaussian Mixture EM for binary data, demonstrating the critical importance of choosing appropriate probabilistic models</li>
+<li><strong>Convergence Behavior</strong>: All algorithms converge properly, validating correct implementation</li>
+<li><strong>Algorithm Characteristics</strong>: Each algorithm shows distinct convergence patterns reflecting their underlying assumptions</li>
+</ol>
+<p><strong>Technical Insights</strong>:</p>
+<ul>
+<li><strong>EM Algorithm</strong>: Proper implementation with numerical stability techniques</li>
+<li><strong>Initialization Impact</strong>: 100 random initializations reveal algorithm robustness</li>
+<li><strong>Convergence Analysis</strong>: Smooth convergence indicates stable optimization</li>
+</ul>
+<p><strong>Practical Implications</strong>:</p>
+<ul>
+<li><strong>Binary Data</strong>: Always consider Bernoulli models for binary features</li>
+<li><strong>Model Selection</strong>: Theoretical appropriateness matters more than algorithm sophistication</li>
+<li><strong>Performance Trade-offs</strong>: Probabilistic models provide more information but require more computation</li>
+</ul>
+<h3 id="question-2-linear-regression-analysis-conclusions">Question 2: Linear Regression Analysis Conclusions </h3>
+<p><strong>Algorithm Convergence Insights</strong>:</p>
+<ol>
+<li><strong>Gradient Descent</strong>: Both batch and stochastic variants converge to analytical solution, validating implementation correctness</li>
+<li><strong>Convergence Characteristics</strong>: Batch GD shows smooth convergence, SGD shows characteristic noise</li>
+<li><strong>Performance Equivalence</strong>: All methods reach similar final solutions despite different convergence paths</li>
+</ol>
+<p><strong>Regularization Insights</strong>:</p>
+<ul>
+<li><strong>Cross-Validation</strong>: Successfully identifies optimal regularization strength (λ=0)</li>
+<li><strong>Overfitting Assessment</strong>: No overfitting detected in this dataset</li>
+<li><strong>Model Comparison</strong>: Ridge regression provides regularization when needed</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
